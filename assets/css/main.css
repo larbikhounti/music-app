@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat Alternates" !important;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  background-color: #F7EDE8;
+}
+
+.active {
+  display: flex !important;
+}
+
+.inactive {
+  display: none;
+}
+
+.nav {
+  max-width: 116rem;
+  margin: 2.4em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav__contrainer {
+  display: flex;
+  justify-content: space-around;
+}
+.nav .nav__links {
+  margin-left: 12.3rem;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  list-style: none;
+  font-weight: bold;
+  line-height: 160%;
+}
+.nav .nav__links .nav__link {
+  color: #000000;
+}
+.nav .nav__action-buttons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  align-items: center;
+}
+.nav .nav__action-buttons .nav__action-buttons__subscribe {
+  background-color: #000000;
+  border: 0.2rem solid #000000;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1.4rem;
+  color: white;
+  text-decoration: none;
+}
+.nav .nav__action-buttons .nav__action-buttons__episodes {
+  background-color: transparent;
+  border: 0.2rem solid #000000;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1.4rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__hamburger {
+  cursor: pointer;
+  margin: 1rem 1rem;
+  display: none;
+}
+
+@media (max-width: 1182px) {
+  .nav {
+    margin: 2.4em 5rem;
+  }
+}
+@media (max-width: 929px) {
+  .header {
+    position: relative;
+  }
+  .nav {
+    display: none;
+    justify-content: start;
+    align-self: center;
+    flex-direction: column;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F7EDE8;
+    position: absolute;
+    z-index: 9999;
+  }
+  .nav .nav__contrainer {
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav .nav__links {
+    flex-direction: column;
+    margin: 0px;
+    padding: 5rem;
+  }
+  .nav .nav__action-buttons {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav .nav__action-buttons .nav__action-buttons__episodes {
+    text-align: center;
+  }
+  .header__hamburger {
+    cursor: pointer;
+    margin: 1rem 1rem;
+    display: block;
+  }
+}
+@media (min-width: 929px) {
+  .nav {
+    display: flex;
+  }
+}
+.header {
+  width: 100vw;
+}
+.header .header__section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__section1 .header__section1-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-right: 11rem;
+}
+.header .header__section1 .header__section1-hero .header__section1-hero__title {
+  font-size: 9.6rem;
+  font-weight: bold;
+  line-height: 100%;
+  margin-bottom: 4rem;
+}
+.header .header__section1 .header__section1-hero .header__section1-hero__title span {
+  display: block;
+  color: #CD4631;
+}
+.header .header__section1 .header__section1-hero .header__section1-hero__description {
+  margin-bottom: 6rem;
+}
+.header .header__section1 .header__section1-hero .header__section1-hero__subscribe {
+  background-color: #000000;
+  border: 0.2rem solid #000000;
+  padding: 2.4rem 4.8rem;
+  border-radius: 1.4rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.header .header__section2 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  overflow: auto;
+}
+.header .header__section2 .header__section2-card {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 37.3rem;
+  height: 37.3rem;
+  position: relative;
+}
+.header .header__section2 .header__section2-card .header__section2-card-thumbnail {
+  width: 37.3rem;
+  height: 37.3rem;
+}
+.header .header__section2 .header__section2-card .header__section2-card-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.header .header__section2 .header__section2-card .header__section2-card-group .header__section2-card_header {
+  align-self: flex-end;
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+.header .header__section2 .header__section2-card .header__section2-card-group .header__section2-card_header .app-icon {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.header .header__section2 .header__section2-card .header__section2-card-group .header__section2-card_footer {
+  align-self: flex-start;
+  color: #81ADC8;
+}
+.header .header__section2 .header__section2-card .header__section2-card-group .header__section2-card_footer .header__section2-card_footer-title {
+  font-size: 3.66rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  line-height: 140%;
+}
+.header .header__section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12rem;
+  padding-bottom: 14rem;
+}
+.header .header__section3 .header__section3-supports {
+  width: 116rem;
+  border-top: 0.15rem solid #000000;
+  border-bottom: 0.15rem solid #000000;
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+  display: flex;
+}
+.header .header__section3 .header__section3-supports .header__section3-supports__title {
+  align-self: self-start;
+}
+.header .header__section3 .header__section3-supports .header__section3-supports__companies {
+  margin-left: 13.2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+@media (max-width: 1406px) {
+  .header .header__section3 .header__section3-supports {
+    width: 90rem;
+  }
+}
+@media (max-width: 929px) {
+  .header .header__section1 {
+    justify-content: center;
+  }
+  .header .header__section1 .header__section1-hero {
+    margin: 0;
+  }
+  .header .header__section1 .header__section1-hero .header__section1-hero__title {
+    font-size: 5rem;
+  }
+  .header .header__section1 .header__section1-leftLine {
+    display: none;
+  }
+  .header .header__section1 .header__section1-rightLine {
+    display: none;
+  }
+  .header .header__section2 {
+    overflow-x: scroll;
+  }
+  .header .header__section2 .header__section2-card {
+    width: 25.3rem;
+    height: 25.3rem;
+  }
+  .header .header__section2 .header__section2-card .header__section2-card-thumbnail {
+    width: 25.3rem;
+    height: 25.3rem;
+  }
+  .header .header__section2 .header__section2-card .header__section2-card-group .header__section2-card_header {
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  .header .header__section2 .header__section2-card .header__section2-card-group .header__section2-card_header .app-icon {
+    margin-left: 0.5rem;
+    max-width: 2rem;
+  }
+  .header .header__section2 .header__section2-card .header__section2-card-group .header__section2-card_footer .header__section2-card_footer-title {
+    font-size: 1.66rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    line-height: 100%;
+  }
+  .header .header__section3 .header__section3-supports {
+    width: 80%;
+    flex-direction: column;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0.15rem solid #000000;
+    border-right: 0.15rem solid #000000;
+  }
+  .header .header__section3 .header__section3-supports .header__section3-supports__title {
+    align-self: center;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+  .header .header__section3 .header__section3-supports .header__section3-supports__companies {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  .header .header__section3 .header__section3-supports .header__section3-supports__companies .header__section3-supports__companies__logo {
+    min-width: min-content;
+    padding-bottom: 4rem;
+  }
+}
+.section01 {
+  background-color: #FFFFFF;
+  padding: 14rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.section01 .section01__scribble {
+  position: absolute;
+  top: -7.9rem;
+  z-index: 999;
+}
+.section01 .section01__title {
+  font-size: 5.93rem;
+  color: #000000;
+  letter-spacing: -4%;
+  line-height: 120%;
+}
+.section01 .section01__thoughts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+.section01 .section01__testimony {
+  width: 100%;
+  background-color: #F7EDE8;
+  padding: 4rem 0;
+  margin-top: 12rem;
+  position: relative;
+  max-width: 150rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section01 .section01__testimony .section01__testimony-description {
+  margin: 4rem 0;
+  line-height: 140%;
+}
+.section01 .section01__testimony .section01__testimony-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section01 .section01__testimony .section01__testimony-author .section01__testimony-author-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.section01 .section01__testimony .section01__testimony-author .section01__testimony-author-job {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.section01 .section01__testimony .bottom-left-icon {
+  position: absolute;
+  bottom: 2rem;
+  left: -6rem;
+}
+.section01 .section01__testimony .top-right-icon {
+  position: absolute;
+  top: -7rem;
+  right: -7rem;
+}
+
+@media (max-width: 1406px) {
+  .section01 .main .section01 {
+    padding: 5rem;
+  }
+}
+@media (max-width: 929px) {
+  .main .section01 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .main .section01 .section01__title {
+    font-size: 1.93rem;
+    color: #000000;
+    letter-spacing: -4%;
+    line-height: 100%;
+    text-align: center;
+  }
+  .main .section01 .section01__thoughts {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .main .section01 .section01__testimony .section01__testimony-description {
+    font-size: 1rem;
+  }
+  .main .section01 .section01__testimony .bottom-left-icon {
+    width: 4rem;
+    left: -2rem;
+  }
+  .main .section01 .section01__testimony .top-right-icon {
+    width: 3rem;
+    right: -1rem;
+    top: -1rem;
+  }
+  .main .section01 .section01__testimony .section01__testimony-author .section01__testimony-author-image {
+    width: 2rem;
+    height: 2rem;
+  }
+  .main .section01 .section01__testimony .section01__testimony-author .section01__testimony-author-name {
+    font-size: 0.5rem;
+  }
+  .main .section01 .section01__testimony .section01__testimony-author .section01__testimony-author-job {
+    font-size: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,59 @@
+@media (max-width: 1406px){
+    .section01{
+        .main{
+            .section01{
+                padding: 5rem;
+            }
+        }
+    }
+ }
+
+
+@media (max-width: 929px) {
+    .main{
+        .section01{
+            padding-left: 5rem;
+            padding-right: 5rem;
+            .section01__title {
+                font-size: 1.93rem;
+                color: $color-black;
+                letter-spacing: -4%;
+                line-height: 100%;
+                text-align: center;
+            }
+            .section01__thoughts{
+                flex-direction: column;
+                align-items: center;
+                margin-top: 5rem;
+            }
+            .section01__testimony{
+                .section01__testimony-description{
+                    font-size: 1.0rem;
+                }
+                .bottom-left-icon{
+                    width: 4rem;
+                    left: -2rem;
+                }
+                .top-right-icon{
+                    width: 3rem;
+                    right: -1rem;
+                    top: -1rem;
+                }
+                .section01__testimony-author{
+                    .section01__testimony-author-image{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    .section01__testimony-author-name{
+                        font-size: 0.5rem;
+                    }
+                    .section01__testimony-author-job{
+                        font-size: 0.5rem;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

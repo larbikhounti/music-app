@@ -1,0 +1,93 @@
+@media (max-width: 1406px){
+    .header{
+        .header__section3{
+            .header__section3-supports{
+                width: 90rem;
+            }
+        }
+    }
+ }
+
+@media (max-width: 929px) {
+     .header {
+         .header__section1 {
+             justify-content: center;
+
+             .header__section1-hero {
+                 margin: 0;
+
+                 .header__section1-hero__title {
+                     font-size: 5rem;
+                 }
+             }
+
+             .header__section1-leftLine {
+                 display: none;
+             }
+
+             .header__section1-rightLine {
+                 display: none;
+             }
+         }
+
+         .header__section2 {
+            overflow-x: scroll;
+             .header__section2-card {
+                 width: 25.3rem;
+                 height: 25.3rem;
+
+                 .header__section2-card-thumbnail {
+                     width: 25.3rem;
+                     height: 25.3rem;
+                 }
+                 .header__section2-card-group {
+                     .header__section2-card_header {
+                         padding-right: 1rem;
+                         padding-top: 1rem;
+                         .app-icon {
+                             margin-left: 0.5rem;
+                             max-width: 2rem;
+                         }
+                     }
+                     .header__section2-card_footer {
+                         .header__section2-card_footer-title {
+                             font-size: 1.66rem;
+                             margin-bottom: 1rem;
+                             margin-left: 1rem;
+                             line-height: 100%;
+                         }
+
+                     }
+                 }
+             }
+         }
+     
+         .header__section3 {
+            .header__section3-supports{
+                width: 80%;
+                flex-direction: column;
+                border-top: 0;
+                border-bottom: 0;
+                border-left: 0.15rem solid #000000;
+                border-right: 0.15rem solid #000000;
+                .header__section3-supports__title{
+                    align-self: center;
+                    margin-bottom: 4rem;
+                    font-size: 3rem;
+                }
+                .header__section3-supports__companies{
+                    flex-direction: column;                  
+                    margin: 0;  
+                    align-items: center;
+                    .header__section3-supports__companies__logo{
+                        min-width: min-content;
+                        padding-bottom: 4rem;
+                    }
+                   
+                }
+            }
+        }
+
+     }
+ }
+
