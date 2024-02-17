@@ -417,11 +417,14 @@ body {
 }
 .section02 {
   background-color: #EDF3F7;
+  display: flex;
+  justify-content: center;
   padding-top: 14rem;
   text-align: center;
   position: relative;
   justify-content: center;
   padding-bottom: 20.4rem;
+  flex-direction: column;
 }
 .section02 .section02__testimonials {
   margin-top: 10rem;
@@ -467,6 +470,7 @@ body {
   position: absolute;
   top: -7.9rem;
   z-index: 999;
+  align-self: center;
 }
 .section02 .section02__title {
   font-size: 5.93rem;
